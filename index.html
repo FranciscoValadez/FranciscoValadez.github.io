@@ -6,7 +6,7 @@
 -->
 <html>
 	<head>
-		<title>Prologue by HTML5 UP</title>
+		<title>Francisco Valadez</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -41,11 +41,17 @@
 
 					<!-- Social Icons -->
 						<ul class="icons">
-							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
-							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<li><a class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://github.com/FranciscoValadez" class="icon brands fa-github"><span class="label">Github</span></a></li>
+							<li><a class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a onclick="copy()" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+							<script>
+								function copy()
+								{
+								navigator.clipboard.writeText("franc.valadez@gmail.com");
+								alert("Email adress copied to the clipboard!");
+								}
+							</script>
 						</ul>
 
 				</div>
@@ -85,45 +91,47 @@
 							<div class="row">
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+										<a href="https://shorturl.at/adgvD" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
 										<header>
 											<h3>Password Checker - Python</h3>
 										</header>
 									</article>
+								</div>
+								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+										<a href="images/resume.jpg" class="image fit"><img src="images/resume.jpg" alt="" /></a>
 										<header>
-											<h3> EX 2</h3>
+											<h3>Resume</h3>
 										</header>
 									</article>
 								</div>
 								<div class="col-4 col-12-mobile">
 									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+										<a class="image fit"><img src="images/pic04.jpg" alt="" /></a>
 										<header>
 											<h3>EX 3</h3>
 										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<header>
-											<h3>EX 4</h3>
-										</header>
-									</article>
 								</div>
-								<div class="col-4 col-12-mobile">
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
-										<header>
-											<h3>EX 5</h3>
-										</header>
-									</article>
-									<article class="item">
-										<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
-										<header>
-											<h3>EX 6</h3>
-										</header>
-									</article>
+							</div>
+
+						</div>
+					</section>
+
+					<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Click Me! :D</h2>
+							</header>
+
+							<p>
+								Gaurenteed to change the way you see things.
+							</p>
+
+							<div class="row">
+								<div class="col-12">	
+									<button onclick="change_css()" >(⩾﹏⩽)</button>
 								</div>
 							</div>
 
@@ -138,40 +146,12 @@
 								<h2>About Me</h2>
 							</header>
 
-							<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+							<a class="image featured"><img src="images/pic08.jpg" alt="" /></a>
 
-							<p>Currently I am attending East Los Angeles College in order to transfer to CSLA for my Bachelors of Science.
+							<p>Currently I am attending East Los Angeles College in order to transfer to CSLA for my Bachelors of Computer Science.
 								In the meantime I like to work on side projects like this website and fixing up stuff and finding out what makes it tick. Modifying things
 								in order to truely make them something I would proud of is above all, my favorite thing
 							</p>
-
-						</div>
-					</section>
-
-				<!-- Contact -->
-					<section id="contact" class="four">
-						<div class="container">
-
-							<header>
-								<h2>Contact</h2>
-							</header>
-
-							<p>If you have any questions for me please shoot me a message through the contact box below.<br>
-								You can also reach out to me through any of the linked social media buttons in the sidebar.
-							</p>
-
-							<form method="post" action="#">
-								<div class="row">
-									<div class="col-6 col-12-mobile"><input type="text" name="name" placeholder="Name" /></div>
-									<div class="col-6 col-12-mobile"><input type="text" name="email" placeholder="Email" /></div>
-									<div class="col-12">
-										<textarea name="message" placeholder="Message"></textarea>
-									</div>
-									<div class="col-12">
-										<input type="submit" value="Send Message" />
-									</div>
-								</div>
-							</form>
 
 						</div>
 					</section>
@@ -189,6 +169,7 @@
 			</div>
 
 		<!-- Scripts -->
+			<script src="assets/js/colorChange.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
